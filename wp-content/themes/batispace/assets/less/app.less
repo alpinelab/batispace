@@ -16,7 +16,46 @@ body { }
    Header
    ========================================================================== */
 
-.banner { }
+.banner {
+   .nav-main { display: none; }
+}
+
+
+
+/* ==========================================================================
+   Home page
+   ========================================================================== */
+
+.home-banner {
+   background: @gray-lighter;
+   text-align: center;
+}
+
+.home-blocks {
+   .blocks-wrapper {
+      padding: 0;
+      li {
+         display: block;
+         float: left;
+         margin: @home-blocks-gutter;
+         height: @home-blocks-height;
+         line-height: @home-blocks-height;
+         text-align: center;
+         vertical-align: middle;
+         background: @gray-lighter;
+         // block widths (adapted golden-ratio)
+         &:nth-child(4n+1) { width: 36%; }
+         &:nth-child(4n+2) { width: 60%; }
+         &:nth-child(4n+3) { width: 60%; }
+         &:nth-child(4n+4) { width: 36%; }
+         // block grid extrem gutters
+         &:nth-child(4n+1) { margin-left:  0; }
+         &:nth-child(4n+2) { margin-right: 0; }
+         &:nth-child(4n+3) { margin-left:  0; }
+         &:nth-child(4n+4) { margin-right: 0; }
+      }
+   }
+}
 
 
 
@@ -83,7 +122,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    Media Queries
    ========================================================================== */
 
-@media (min-width: @screen-sm-min) { }
+@media (min-width: @screen-sm-min) {
+   .banner .nav-main { display: block; }
+}
 
 @media (min-width: @screen-md-min) { }
 

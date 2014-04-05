@@ -1,14 +1,7 @@
-<div class="banner">
-  Grandeur nature
-</div>
+<div class="home-banner">Grandeur nature</div>
 
-<nav class="blocks">
-  <ul class="menu">
-    <li><a href="/metiers">Metiers</a></li>
-    <li><a href="/marques">Marques</a></li>
-    <li><a href="/infos-pratiques">Infos pratiques</a></li>
-    <li><a href="/posts">Actualités</a></li>
-    <li><a href="/contact">Contact</a></li>
-    <li><a href="/blog">Blog</a></li>
-  </ul>
+<nav class="home-blocks"> <?
+  if (has_nav_menu('home_blocks')) {
+    wp_nav_menu(array('theme_location' => 'home_blocks', 'menu_class' => 'blocks-wrapper'));
+  } ?>
 </nav>
