@@ -17,29 +17,33 @@ body { }
    ========================================================================== */
 
 .banner {
-   position: relative;
-   z-index: 10;
-   background: @body-bg;
    .nav-main { display: none; }
 }
 
 .ribbon {
+   float: left;
    position: relative;
-   width: @ribbon-width;
+   width: @ribbon-size;
+   height: @ribbon-size;
+   text-align: center;
    h1 {
-      font-size: @font-size-h3;
-      width: 100%;
-      position: absolute;
-      z-index: 5;
       margin: 0;
-      padding-top: @ribbon-padding-top;
-      padding-bottom: @ribbon-padding-bottom;
-      -webkit-transform: rotate(-45deg);
-      -webkit-transform-origin: 100% 0;
-      left: -2.35 * @ribbon-padding-top;
-      top: -1.2 * @ribbon-padding-top;
-      background: @gray-lighter;
-      text-align: center;
+      font-size: @font-size-h3;
+      width:  @ribbon-size;
+      height: @ribbon-size;
+      line-height: @ribbon-size*0.7;
+      .rotate(-45deg);
+      .transform-origin(50% 50%);
+   }
+   &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      border: solid @ribbon-size/2 transparent;
+      border-top-color:  @gray-lighter;
+      border-left-color: @gray-lighter;
    }
 }
 
