@@ -21,10 +21,11 @@ body { }
    .nav-main { display: none; }
 }
 
+.blog .ribbon { position: relative; }
+.page .ribbon { position: absolute; }
+
 .ribbon {
-   float: left;
    margin-left: -@grid-gutter-width/2;
-   position: relative;
    width: @ribbon-size;
    height: @ribbon-size;
    text-align: center;
@@ -40,7 +41,6 @@ body { }
    &::before {
       content: '';
       position: absolute;
-      z-index: -1;
       left: 0;
       top: 0;
       border: solid @ribbon-size/2 transparent;
