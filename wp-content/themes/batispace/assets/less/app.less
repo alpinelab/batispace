@@ -25,10 +25,10 @@ body { }
 .page .ribbon { position: absolute; }
 
 .ribbon {
-   margin-left: -@grid-gutter-width/2;
    width: @ribbon-size;
    height: @ribbon-size;
    text-align: center;
+   z-index: 10;
    h1 {
       margin: 0;
       font-size: @font-size-h3;
@@ -118,11 +118,12 @@ body { }
    Posts
    ========================================================================== */
 
-.hentry header { }
-.hentry time { }
-.hentry .byline { }
-.hentry .entry-content { }
-.hentry footer { }
+.hentry {
+   time, .entry-title { display: inline; }
+   .wp-post-image { width: 100%; height: auto; }
+   .entry-content { }
+   footer { }
+}
 
 
 

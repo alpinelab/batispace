@@ -4,4 +4,10 @@
       <a class="brand" href="<?php echo home_url('/') ?>"><?php bloginfo('name'); ?></a>
     </div>
   </div>
-</header>
+</header> <?
+
+if (is_page() && !is_front_page()) { ?>
+  <div class="ribbon">
+    <h1><?php echo roots_title(); ?></h1>
+  </div> <?
+} ?>
