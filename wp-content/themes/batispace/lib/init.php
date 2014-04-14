@@ -8,7 +8,8 @@ function roots_setup() {
 
   // Register wp_nav_menu() menus (http://codex.wordpress.org/Function_Reference/register_nav_menus)
   register_nav_menus(array(
-    'home_blocks' => __('Home Blocks', 'roots')
+    'home_blocks' => __('Home Blocks', 'roots'),
+    'footer'      => __('Footer', 'roots')
   ));
 
   // Add post thumbnails (http://codex.wordpress.org/Post_Thumbnails)
