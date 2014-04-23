@@ -8,8 +8,14 @@
    Base
    ========================================================================== */
 
-body { }
+html {
+   position: relative;
+   min-height: 100%;
+}
 
+body {
+   margin-bottom: @footer-height;
+}
 
 
 /* ==========================================================================
@@ -143,7 +149,18 @@ body { }
    Footer
    ========================================================================== */
 
-.content-info { }
+.content-info {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: @footer-height;
+   background: @gray;
+   border-top: solid 1px @gray;
+   .menu {
+      list-style: none;
+      padding: 0;
+   }
+}
 
 
 
