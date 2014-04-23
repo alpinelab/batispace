@@ -104,6 +104,22 @@ body {
 
 
 /* ==========================================================================
+   Pages
+   ========================================================================== */
+
+.page.devis {
+   .main { text-align: center; }
+   h2 {
+      display: none;
+      padding: 0.25em 4em;
+      border-top: solid 1px @gray-lighter;
+      border-bottom: solid 1px @gray-lighter;
+   }
+}
+
+
+
+/* ==========================================================================
    Primary Content
    ========================================================================== */
 
@@ -139,8 +155,11 @@ body {
    Contact Form 7
    ========================================================================== */
 
+.wpcf7 { margin: 0 @ribbon-size; }
 .wpcf7-form {
-   margin-left: @ribbon-size;
+   display: inline-block;
+   margin: 0 auto;
+   text-align: center;
 }
 
 
@@ -182,6 +201,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 @media (min-width: @screen-sm-min) {
    .banner .nav-main { display: block; }
+   .page.devis h2 { display: inline-block; }
 }
 
 @media (min-width: @screen-md-min) { }
