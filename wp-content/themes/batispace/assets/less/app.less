@@ -62,7 +62,10 @@ body {
    ========================================================================== */
 
 .home-banner {
-   background: @gray-lighter;
+   background-image: url('http://lorempixel.com/600/300/nature/');
+   background-size: cover;
+   background-position: 50% 50%;
+   padding: 1em 0;
    text-align: center;
 }
 
@@ -89,6 +92,15 @@ body {
          &:nth-child(4n+2) { margin-right: 0; }
          &:nth-child(4n+3) { margin-left:  0; }
          &:nth-child(4n+4) { margin-right: 0; }
+         // backgrounds
+         background-size: cover;
+         background-position: 50% 50%;
+         &.menu-metiers         { background-image: url('http://lorempixel.com/600/300/business/'); }
+         &.menu-marques         { background-image: url('http://lorempixel.com/600/300/sports/'); }
+         &.menu-devis           { background-image: url('http://lorempixel.com/600/300/technics/'); }
+         &.menu-contact         { background-image: url('http://lorempixel.com/600/300/people/'); }
+         &.menu-infos-pratiques { background-image: url('http://lorempixel.com/600/300/food/'); }
+         &.menu-blog            { background-image: url('http://lorempixel.com/600/300/animals/'); }
       }
    }
 }
