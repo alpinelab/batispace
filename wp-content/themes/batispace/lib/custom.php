@@ -41,3 +41,8 @@ function carousel_func() {
   return ob_get_clean();
 }
 add_shortcode('carousel', 'carousel_func');
+
+// URL helper
+function image_asset($filename) {
+  return get_stylesheet_directory_uri() . '/assets/img/' . $filename;
+}

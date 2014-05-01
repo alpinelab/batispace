@@ -23,8 +23,18 @@ body {
    ========================================================================== */
 
 .banner {
-   height: @navbar-height;
-   .nav-main { display: none; }
+   &, & .container, & .brand { height: @navbar-height; }
+   background: @navbar-default-bg;
+   color: @navbar-default-color;
+   margin-bottom: 2em;
+   .container {
+      background-image: url('../img/header.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+   }
+   .brand {
+      display: block;
+   }
 }
 
 .blog .ribbon,
@@ -227,7 +237,6 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    ========================================================================== */
 
 @media (min-width: @screen-sm-min) {
-   .banner .nav-main { display: block; }
    .page.devis h2 { display: inline-block; }
    .home-slider { display: block; }
 }
