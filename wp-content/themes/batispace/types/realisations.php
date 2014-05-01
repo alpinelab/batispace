@@ -8,7 +8,8 @@ function create_post_type() {
         'singular_name' => __('Realisation')
       ),
       'public' => true,
-      'has_archive' => true
+      'has_archive' => true,
+      'supports' => array('title', 'editor', 'thumbnail')
     )
   );
 }
