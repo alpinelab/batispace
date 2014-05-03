@@ -46,23 +46,25 @@ body {
    height: @ribbon-size;
    text-align: center;
    z-index: 10;
+   margin-top: -2em;
+   right: 0;
    h1 {
       margin: 0;
       font-size: @font-size-h3;
       width:  @ribbon-size;
       height: @ribbon-size;
       line-height: @ribbon-size*0.7;
-      .rotate(-45deg);
+      .rotate(45deg);
       .transform-origin(50% 50%);
    }
    &::before {
       content: '';
       position: absolute;
-      left: 0;
+      right: 0;
       top: 0;
       border: solid @ribbon-size/2 transparent;
       border-top-color:  @gray-lighter;
-      border-left-color: @gray-lighter;
+      border-right-color: @gray-lighter;
    }
 }
 
@@ -77,11 +79,12 @@ body {
    background-position: 50% 50%;
    padding: 1em 0;
    text-align: center;
-   margin-bottom: 2em;
+   margin-bottom: 4em;
 }
 
 .home-slider {
    display: none;
+   margin-bottom: 2em;
    .carousel-inner > .item > img { width: 100%; }
 }
 
@@ -99,10 +102,10 @@ body {
          background: @gray-lighter;
          a { display: block; }
          // block widths (adapted golden-ratio)
-         &:nth-child(4n+1) { width: 36%; }
+         &:nth-child(4n+1) { width: 38%; }
          &:nth-child(4n+2) { width: 60%; }
          &:nth-child(4n+3) { width: 60%; }
-         &:nth-child(4n+4) { width: 36%; }
+         &:nth-child(4n+4) { width: 38%; }
          &:last-child:nth-child(2n+1) { width: 100%; }
          // block grid extrem gutters
          &:nth-child(4n+1) { margin-left:  0; }
