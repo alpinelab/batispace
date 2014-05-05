@@ -101,17 +101,27 @@ body {
          vertical-align: middle;
          background: @gray-lighter;
          a { display: block; }
-         // block widths (adapted golden-ratio)
-         &:nth-child(4n+1) { width: 38%; }
-         &:nth-child(4n+2) { width: 60%; }
-         &:nth-child(4n+3) { width: 60%; }
-         &:nth-child(4n+4) { width: 38%; }
-         &:last-child:nth-child(2n+1) { width: 100%; }
+         &:nth-child(8n+1) { width: 60%; }
+         &:nth-child(8n+2) { width: 38%; }
+         &:nth-child(8n+3) { width: 38%; }
+         &:nth-child(8n+4) { width: 60%; }
+         &:nth-child(8n+5) { width: 100%; }
+         &:nth-child(8n+6) { width: 32%; }
+         &:nth-child(8n+7) { width: 32%; }
+         &:nth-child(8n+8) { width: 32%; }
+         &:last-child:nth-child(8n+1),
+         &:last-child:nth-child(8n+3),
+         &:last-child:nth-child(8n+6) { width: 100%; }
+         &:last-child:nth-child(8n+7) { width: 66%; margin-right: 0; }
          // block grid extrem gutters
-         &:nth-child(4n+1) { margin-left:  0; }
-         &:nth-child(4n+2) { margin-right: 0; }
-         &:nth-child(4n+3) { margin-left:  0; }
-         &:nth-child(4n+4) { margin-right: 0; }
+         &:nth-child(8n+1) { margin-left:  0; }
+         &:nth-child(8n+2) { margin-right: 0; }
+         &:nth-child(8n+3) { margin-left:  0; }
+         &:nth-child(8n+4) { margin-right: 0; }
+         &:nth-child(8n+5) { margin-left:  0; margin-right: 0; }
+         &:nth-child(8n+6) { margin-left: 0; }
+         &:nth-child(8n+7) {  }
+         &:nth-child(8n+8) { margin-right: 0; }
          // backgrounds
          background-size: cover;
          background-position: 50% 50%;
