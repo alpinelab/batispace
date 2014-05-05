@@ -46,3 +46,10 @@ add_shortcode('carousel', 'carousel_func');
 function image_asset($filename) {
   return get_stylesheet_directory_uri() . '/assets/img/' . $filename;
 }
+
+// Thumbnail URL helper
+function get_the_thumbnail_url($size = 'large') {
+  $thumb_id = get_post_thumbnail_id();
+  $thumb_url = wp_get_attachment_image_src($thumb_id, $size, false);
+  return $thumb_url[0];
+}

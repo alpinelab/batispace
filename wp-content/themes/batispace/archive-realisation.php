@@ -1,20 +1,15 @@
 <?php
 
-  get_template_part('templates/page', 'header');
-
-  $terms = get_categories(array(
-    'taxonomy'    => array('produit', 'materiau'),
-    'hide_empty'  => 0
-  )); ?>
+  get_template_part('templates/page', 'header'); ?>
 
   <div class="blocks">
     <ul class="blocks-wrapper"> <?
-      foreach ($terms as $term) { ?>
-        <li class="term-<?= $term->slug ?>">
-          <a href="<?= get_term_link($term) ?>">
-            <?= $term->name ?>
+      while (have_posts()) : the_post(); ?>
+        <li class="realisation-<?= basename(get_permalink()) ?>" style="background-image: url('<?= get_the_thumbnail_url() ?>')">
+          <a href="<?= get_permalink() ?>">
+            <?= $post->post_title ?>
           </a>
         </li> <?
-      } ?>
+      endwhile; ?>
     </ul>
   </div>
