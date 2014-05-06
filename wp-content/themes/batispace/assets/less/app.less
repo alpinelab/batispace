@@ -48,12 +48,14 @@ body {
    z-index: 10;
    margin-top: -2em;
    right: 0;
+   overflow: hidden;
    h1 {
       margin: 0;
       font-size: @font-size-h3;
       width:  @ribbon-size;
       height: @ribbon-size;
       line-height: @ribbon-size*0.7;
+      color: white;
       .rotate(45deg);
       .transform-origin(50% 50%);
    }
@@ -63,8 +65,8 @@ body {
       right: 0;
       top: 0;
       border: solid @ribbon-size/2 transparent;
-      border-top-color:  @gray-lighter;
-      border-right-color: @gray-lighter;
+      border-top-color:  @batispace-gray;
+      border-right-color: @batispace-gray;
    }
 }
 
