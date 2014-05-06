@@ -56,6 +56,8 @@ body {
       width:  @ribbon-size;
       height: @ribbon-size;
       line-height: @ribbon-size*0.7;
+      font-family: 'Zeyada', @font-family-base;
+      font-size: 15px;
       color: white;
       .rotate(45deg);
       .transform-origin(50% 50%);
@@ -102,8 +104,27 @@ body {
          line-height: @home-blocks-height;
          text-align: center;
          vertical-align: middle;
-         background: @gray-lighter;
-         a { display: block; }
+         a {
+            display: block;
+            font-family: 'Zeyada', @font-family-base;
+            font-size: 20px;
+            text-transform: uppercase;
+            position: relative;
+            color: @batispace-gray;
+            &:hover { text-decoration: none; }
+            // Overlay stuff
+            .overlay { background: fade(@batispace-gray, 80%); }
+            .overlay-inner {
+               display: inline;
+               background: fade(white, 80%);
+               padding: 0.5em 1.5em;
+            }
+            .overlay, .overlay-inner {
+               -webkit-transition: opacity 0.3s;
+               &:hover { .opacity(0); }
+            }
+         }
+         // Grid system and items widths
          &:nth-child(8n+1) { width: 60%; }
          &:nth-child(8n+2) { width: 38%; }
          &:nth-child(8n+3) { width: 38%; }
@@ -112,11 +133,12 @@ body {
          &:nth-child(8n+6) { width: 32%; }
          &:nth-child(8n+7) { width: 32%; }
          &:nth-child(8n+8) { width: 32%; }
+         // Fills available space with last element of the grid
          &:last-child:nth-child(8n+1),
          &:last-child:nth-child(8n+3),
          &:last-child:nth-child(8n+6) { width: 100%; }
          &:last-child:nth-child(8n+7) { width: 66%; margin-right: 0; }
-         // block grid extrem gutters
+         // Adjust gutters of first and last items of a row
          &:nth-child(8n+1) { margin-left:  0; }
          &:nth-child(8n+2) { margin-right: 0; }
          &:nth-child(8n+3) { margin-left:  0; }
@@ -125,7 +147,7 @@ body {
          &:nth-child(8n+6) { margin-left: 0; }
          &:nth-child(8n+7) {  }
          &:nth-child(8n+8) { margin-right: 0; }
-         // backgrounds
+         // Items backgrounds
          background-size: cover;
          background-position: 50% 50%;
          &.menu-metiers         { background-image: url('http://lorempixel.com/600/300/business/'); }
