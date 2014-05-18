@@ -7,7 +7,11 @@
       while (have_posts()) : the_post(); ?>
         <li class="realisation-<?= basename(get_permalink()) ?>" style="background-image: url('<?= get_the_thumbnail_url() ?>')">
           <a href="<?= get_permalink() ?>">
-            <?= $post->post_title ?>
+            <div class="overlay">
+              <div class="overlay-inner">
+                <?= $post->post_title ?>
+              </div>
+            </div>
           </a>
         </li> <?
       endwhile; ?>
