@@ -4,7 +4,7 @@
   </div>
 </header> <?
 
-if (is_page() && !is_front_page()) { ?>
+if ((is_page() && !is_front_page()) || is_post_type_archive('realisation') || $post_type == 'realisation') { ?>
   <div class="ribbon">
     <h1><?php echo roots_title(); ?></h1>
   </div> <?
