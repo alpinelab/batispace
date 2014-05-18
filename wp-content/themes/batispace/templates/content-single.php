@@ -2,8 +2,8 @@
   <article <?php post_class(); ?>>
 
     <header>
-      <?php get_template_part('templates/entry-meta'); ?>
       <h1 class="entry-title"><?php the_title(); ?></h1>
+      <?php get_template_part('templates/entry-meta'); ?>
     </header>
 
     <? if (has_post_thumbnail()) { // Featured image or featured video

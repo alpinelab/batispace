@@ -207,10 +207,16 @@ body {
    ========================================================================== */
 
 .hentry {
-   time, .entry-title { display: inline; }
-   .wp-post-image { width: 100%; height: auto; }
-   .entry-content { }
-   footer { }
+   header {
+      margin-bottom: 15px;
+      .entry-title, time { display: inline; }
+   }
+   .wp-post-image, .featured_video_plus {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+   }
+   .entry-content, .entry-summary { margin-bottom: 30px; }
 }
 
 
