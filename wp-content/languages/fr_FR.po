@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-04-18 07:55:31+0000\n"
+"PO-Revision-Date: 2014-04-30 16:45:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1183,7 +1183,7 @@ msgstr "Lecture/Pause"
 
 #: wp-includes/script-loader.php:319
 msgid "Mute Toggle"
-msgstr "Inverser le son"
+msgstr "Couper le son"
 
 #: wp-includes/script-loader.php:321
 msgid "Turn off Fullscreen"
