@@ -15,7 +15,7 @@ html {
 }
 
 body {
-   margin-bottom: @footer-height;
+   margin-bottom: @footer-height + 70px;
 }
 
 .pull-right { text-align: right; }
@@ -79,11 +79,13 @@ body {
       list-style: none;
       padding: 0;
       li {
+         font-size: @font-size-h2;
          float: left;
-         margin-bottom: 1.5em;
+         margin-bottom: 0.2em;
          a {
+            font-family: 'Zeyada', @font-family-base;
             box-sizing: border-box;
-            padding: 1.5em 3em;
+            padding: 0.2em 1.5em;
             color: white;
             text-decoration: none;
          }
@@ -290,6 +292,7 @@ body {
    height: @footer-height;
    background: @batispace-gray;
    padding-top: 25px;
+   margin-top: 70px;
    a {
       color: white;
       .transition(color 0.2s);
