@@ -30,6 +30,7 @@ body {
    color: @navbar-default-color;
    margin-bottom: 2em;
    .container {
+      position: relative;
       background-image: url('../img/header.jpg');
       background-size: contain;
       background-repeat: no-repeat;
@@ -70,6 +71,29 @@ body {
    }
 }
 
+#header-navbar {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   .menu {
+      list-style: none;
+      padding: 0;
+      li {
+         float: left;
+         margin-bottom: 1.5em;
+         a {
+            box-sizing: border-box;
+            padding: 1.5em 3em;
+            color: white;
+            text-decoration: none;
+         }
+         a:hover {
+            color: black;
+            background-color: white;
+         }
+      }
+   }
+}
 
 /* ==========================================================================
    Home page

@@ -9,6 +9,7 @@ function roots_setup() {
   // Register wp_nav_menu() menus (http://codex.wordpress.org/Function_Reference/register_nav_menus)
   register_nav_menus(array(
     'home_blocks'  => __('Home Blocks', 'roots'),
+    'header-right' => __('Header Right', 'roots'),
     'footer-left'  => __('Footer Left', 'roots'),
     'footer-right' => __('Footer Right', 'roots')
   ));
