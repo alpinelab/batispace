@@ -110,10 +110,17 @@ body {
             color: @batispace-gray;
             &:hover { text-decoration: none; }
             // Overlay stuff
-            .overlay { background: fade(@batispace-gray, 80%); }
+            .overlay {
+               background-image: url('../img/overlay.png');
+               background-color: fade(@batispace-gray, 80%);
+               background-position: center center;
+               background-repeat: no-repeat;
+               background-size: auto 100%;
+            }
             .overlay-inner {
                display: inline;
-               background: fade(white, 80%);
+               background: white;
+               // background: fade(white, 80%);
                padding: 0.5em 1.5em;
             }
             .overlay, .overlay-inner {
