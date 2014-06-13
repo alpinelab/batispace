@@ -1,4 +1,4 @@
-<div class="home-banner">Grandeur nature</div>
+<div class="home-banner"></div>
 
 <div class="home-slider">
   <?= do_shortcode('[image-carousel]') ?>

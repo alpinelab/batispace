@@ -83,7 +83,7 @@ body {
          float: left;
          margin-bottom: 0.2em;
          a {
-            font-family: 'Zeyada', @font-family-base;
+            font-family: 'News Cycle', @font-family-base;
             box-sizing: border-box;
             padding: 0.2em 1.5em;
             color: white;
@@ -102,10 +102,10 @@ body {
    ========================================================================== */
 
 .home-banner {
-   background-image: url('http://lorempixel.com/600/300/nature/');
+   background-image: url('../img/grandeur-nature.jpg');
    background-size: cover;
    background-position: 50% 50%;
-   padding: 1em 0;
+   padding: 1.5em 0;
    text-align: center;
    margin-bottom: 4em;
 }
@@ -130,7 +130,7 @@ body {
          a {
             display: block;
             font-family: 'Zeyada', @font-family-base;
-            font-size: 20px;
+            font-size: 28px;
             text-transform: uppercase;
             position: relative;
             color: @batispace-gray;
@@ -146,7 +146,6 @@ body {
             .overlay-inner {
                display: inline;
                background: white;
-               // background: fade(white, 80%);
                padding: 0.5em 1.5em;
             }
             .overlay, .overlay-inner {
@@ -266,6 +265,20 @@ body {
       time { display: none; }
    }
    .wp-post-image { margin-bottom: 25px; }
+}
+
+/* ==========================================================================
+   Blog
+   ========================================================================== */
+
+.blog .hentry {
+   .entry-title {
+      a { color: black; }
+      a:hover {
+         color: @batispace-blue;
+         text-decoration: none;
+      }
+   }
 }
 
 /* ==========================================================================
