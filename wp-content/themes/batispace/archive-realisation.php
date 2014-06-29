@@ -9,7 +9,9 @@
           <a href="<?= get_permalink() ?>">
             <div class="overlay">
               <div class="overlay-inner">
-                <?= $post->post_title ?>
+                <div class="overlay-inner-content">
+                  <?= $post->post_title ?>
+                </div>
               </div>
             </div>
           </a>
