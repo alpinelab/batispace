@@ -2,6 +2,7 @@
   <article <?php post_class(); ?>>
 
     <header>
+      <a class="back" href="/realisations/">retour aux r&eacute;alisations</a>
       <h1 class="entry-title"><?php the_title(); ?></h1>
       <?php get_template_part('templates/entry-meta'); ?>
     </header>

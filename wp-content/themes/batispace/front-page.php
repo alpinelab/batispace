@@ -1,4 +1,7 @@
-<div class="home-banner"></div>
+<div class="home-banner">
+  <a href="http://www.veranda-grandeurnature.com/" target="_blank">
+  </a>
+</div>
 
 <div class="home-slider">
   <?= do_shortcode('[image-carousel]') ?>

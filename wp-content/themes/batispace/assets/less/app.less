@@ -99,12 +99,15 @@ body {
    ========================================================================== */
 
 .home-banner {
-   background-image: url('../img/grandeur-nature.jpg');
-   background-size: cover;
-   background-position: 50% 50%;
-   padding: 1.5em 0;
    text-align: center;
-   margin-bottom: 4em;
+   margin-bottom: 2.5em;
+   a {
+      display: block;
+      background-image: url('../img/grandeur-nature.jpg');
+      background-size: cover;
+      background-position: 50% 50%;
+      padding: 26px 0;
+   }
 }
 
 .home-slider {
@@ -121,11 +124,11 @@ body {
          float: left;
          margin: @home-blocks-gutter;
          height: @home-blocks-height;
-         line-height: @home-blocks-height;
          text-align: center;
          vertical-align: middle;
          a {
             display: block;
+            height: 100%;
             font-family: 'Zeyada', @font-family-base;
             font-size: 28px;
             text-transform: uppercase;
@@ -134,6 +137,7 @@ body {
             &:hover { text-decoration: none; }
             // Overlay stuff
             .overlay {
+               height: 100%;
                background-image: url('../img/overlay.png');
                background-color: fade(@batispace-gray, 80%);
                background-position: center center;
@@ -142,6 +146,8 @@ body {
             }
             .overlay-inner {
                display: inline;
+               position: relative;
+               top: @home-blocks-height / 4 - 1em;
                background: white;
                padding: 0.2em 1em 0;
             }
@@ -258,8 +264,16 @@ body {
 .single-realisation .hentry {
    header {
       text-align: center;
-      margin: 15px 0 75px;
+      margin: 0 0 75px 0;
       time { display: none; }
+      .back {
+         display: block;
+         margin: -13px 0 15px 0;
+         font-size: 20px;
+         &::after, &::before {
+            content: ' - ';
+         }
+      }
    }
    .wp-post-image { margin-bottom: 25px; }
 }
