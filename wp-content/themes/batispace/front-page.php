@@ -12,8 +12,8 @@
     wp_nav_menu(array(
       'theme_location' => 'home_blocks',
       'menu_class'     => 'blocks-wrapper',
-      'link_before'    => '<div class="overlay"><div class="overlay-inner">',
-      'link_after'     => '</div></div>'
+      'link_before'    => '<div class="overlay"><div class="overlay-inner"><div class="overlay-inner-content">',
+      'link_after'     => '</div></div></div>'
     ));
   } ?>
 </nav>

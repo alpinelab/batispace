@@ -232,7 +232,9 @@ body {
    Primary Content
    ========================================================================== */
 
-.main { }
+.main {
+   .batispace-bullet { margin-right: 10px; }
+}
 
 /* Gallery Shortcode */
 .gallery-row { padding: 15px 0; }
@@ -255,6 +257,7 @@ body {
    header {
       margin-bottom: 15px;
       .entry-title, time { display: inline; }
+      h1::before, h1::after { content: ' - '; }
    }
    .wp-post-image, .featured_video_plus {
       width: 100%;
@@ -278,7 +281,7 @@ body {
       .back {
          display: block;
          margin: -13px 0 15px 0;
-         font-size: 20px;
+         font-size: 14px;
          &::after, &::before {
             content: ' - ';
          }
