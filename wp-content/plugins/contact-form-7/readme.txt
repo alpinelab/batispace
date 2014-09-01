@@ -3,8 +3,8 @@ Contributors: takayukister
 Donate link: http://contactform7.com/donate/
 Tags: contact, form, contact form, feedback, email, ajax, captcha, akismet, multilingual
 Requires at least: 3.8
-Tested up to: 3.9.1
-Stable tag: 3.9
+Tested up to: 4.0
+Stable tag: 3.9.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,7 +58,7 @@ The following are other recommended plugins by the author of Contact Form 7.
 * Galician (gl_ES) - [Arume Desenvolvementos Informáticos](http://www.arumeinformatica.es/)
 * Georgian (ka_GE) - [Nodar Rocko Davituri](http://davituri.com/)
 * German (de_DE) - [Marcel Spitau](http://blog.spitau.de), [Ivan Graf](http://blog.bildergallery.com/)
-* Greek (el) - [Nick Mouratidis](http://www.kepik.gr/), [Pr. friedlich](http://friedlich.wordpress.com/)
+* Greek (el) - [Nick Mouratidis](http://www.kepik.gr/), [Pr. friedlich](http://friedlich.wordpress.com/), John D. Dimoferlias
 * Gujarati (gu_IN) - [Apoto](http://www.apoto.com/)
 * Haitian (ht) - [Lam Tu Do](http://bizover.net/)
 * Hebrew (he_IL) - [Yaron Ofer](http://www.gadgetguru.co.il/), [Arik Galansky](http://www.arikg.co.il/)
@@ -80,6 +80,7 @@ The following are other recommended plugins by the author of Contact Form 7.
 * Persian (Farsi; fa_IR) - [Mohammad Musavi](http://www.musavis.com/), [Mohsen Firoozmandan](http://www.rankbazar.com/), Ghaem Omidi
 * Polish (pl_PL) - [Zbigniew Czernik](http://zibik.jogger.pl/), [Daniel Fruzynski](http://www.poradnik-webmastera.com), [RafalDesign](http://www.rafaldesign.pl/), [Bartosz Arendt](http://digitalfactory.pl/)
 * Portuguese (pt_PT) - [Hugo Baeta](http://hugobaeta.com), [Pedro Nave](http://pedronave.com/)
+* Punjabi (pa_IN) - Jasvinder Sing
 * Russian (ru_RU) - Dmitry Volotovich, [Denis Voituk](http://artprima.cz/), [kg69design](http://kg69design.com/)
 * Romanian (ro_RO) - [Stas Sushkov](http://stas.nerd.ro/), [Anunturi Jibo](http://www.jibo.ro/), [Marius Olar](http://webdudes.ro/), [Inbox Translation](http://inboxtranslation.com/)
 * Serbian (sr_RS) - [Vedran](http://www.seorabbit.com/), [Aleksandar Urošević](http://blog.urosevic.net/)
@@ -123,6 +124,23 @@ Do you have questions or issues with Contact Form 7? Use these support channels 
 == Changelog ==
 
 For more information, see [Releases](http://contactform7.com/category/releases/).
+
+= 3.9.2 =
+
+* Fixed: incorrect behavior seen in demo mode.
+* Fixed: Flamingo saved submitter's contact info even when the submission was spam.
+* New: Introduce wpcf7_skip_mail filter.
+* Enhancement: add a random-named directory to each uploaded file's temporary file path in order to make the path harder for a submitter to guess.
+* Translation for Punjabi has been created.
+* Translations for Turkish, Korean and Slovak have been updated.
+
+= 3.9.1 =
+
+* Fix: options with empty values didn't work correctly in a drop-down menu.
+* Fix: broke layout of input fields after validation by an incorrect jQuery use.
+* Fix: couldn't enqueue JavaScript manually with wpcf7_enqueue_scripts() when WPCF7_LOAD_JS was false.
+* Fix: couldn't enqueue CSS manually with wpcf7_enqueue_styles() when WPCF7_LOAD_CSS was false.
+* Translations for Greek and Hungarian have been updated.
 
 = 3.9 =
 
